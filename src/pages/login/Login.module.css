@@ -1,0 +1,107 @@
+/* src/pages/login/Login.module.css */
+.loginContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    121.73% 121.49% at 100% -3.39%,
+    #1f4247 0%,
+    #0d1d23 56.18%,
+    #09141a 100%
+  );
+  margin: -8px;
+}
+
+.loginForm {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+  .loginForm {
+    display: none;
+  }
+
+  .mobileInfoText {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .mobileInfoText {
+    display: none;
+  }
+
+.loginForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm .formGroup {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.loginForm input {
+  width: 98%;
+  height: 51px;
+  border: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15.73px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9px;
+  color: #fff;
+  outline: none;
+  padding-left: 10px;
+}
+
+.loginForm .togglePassword {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fff;
+}
+
+.loginForm button {
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registerText a {
+  background: linear-gradient(
+    74.08deg,
+    #94783E -6.8%,
+    #F3EDA6 16.76%,
+    #F8FAE5 30.5%,
+    #FFE2BE 49.6%,
+    #D5BE88 78.56%,
+    #F8FAE5 89.01%,
+    #D5BE88 100.43%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  text-decoration: none;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.registerText p {
+  text-align: center;
+}
+}
